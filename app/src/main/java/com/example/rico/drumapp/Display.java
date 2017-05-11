@@ -2,13 +2,14 @@ package com.example.rico.drumapp;
 
 import android.content.Context;
 import android.graphics.PointF;
+import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 
 import android.view.View;
 
 public class Display extends View {
-    public Display(Context context, AttributeSet attrs) {
+    public Display(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setBackground(ContextCompat.getDrawable(context,R.drawable.bg));
     }
